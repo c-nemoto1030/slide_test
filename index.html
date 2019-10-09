@@ -10,30 +10,28 @@
 <body>
   <div class="container">
     <div id="app">
-      <carousel>
+      <carousel v-bind:per-page=1 v-bind:navigation-enabled="true" v-bind:pagination-enabled="true" :speed="3000" navigation-prev-label="もどる" navigation-next-label="つぎへ">
         <slide>
           <span class="label">
-            Slide
+            このスライドは１です
           </span>
         </slide>
         <slide>
           <span class="label">
-            Slide
+            このスライドは２です
           </span>
         </slide>
         <slide>
           <span class="label">
-            Slide
+            このスライドは３です
           </span>
         </slide>
         <slide>
           <span class="label">
-            Slide
+            このスライドは４です
           </span>
         </slide>
       </carousel>
-      <button class="prev">戻る</button>
-      <button class="next">次へ</button>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>

@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 .VueCarousel-slide {
   position: relative;
   background: #42b983;
